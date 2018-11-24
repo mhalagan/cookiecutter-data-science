@@ -57,6 +57,10 @@ endif
 ## Set up python interpreter environment
 create_environment:
 	$(PYTHON_INTERPRETER) -m venv venv
+
+
+## Install packages
+build_environment:
 	source venv/bin/activate
 	pip install -r requirements.txt
 
